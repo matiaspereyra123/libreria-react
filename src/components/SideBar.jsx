@@ -1,13 +1,13 @@
 
 
-import { useState } from "react";
+/* import { useState } from "react"; */
 import{ Link} from "react-router-dom";
 
 function SideBar() {
-const[style,setStyle]=useState(false);
+/* const[style,setStyle]=useState(false);
 const ocultarMenu=()=>{
      setStyle(!style);
-}
+} */
 
 
   return (
@@ -15,7 +15,7 @@ const ocultarMenu=()=>{
    
    
     <div >
-        <div onClick={ocultarMenu} > 
+        <div  > 
         <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
   
@@ -43,17 +43,17 @@ const ocultarMenu=()=>{
 
    
     <li className="nav-item">
-        <a className="nav-link collapsed" href="/">
-            <i className="fas fa-fw fa-folder"></i>
-            <span> <Link className="" to="/">HOME</Link></span>
-        </a>
+        <p className="nav-link collapsed" href="/">
+            <i className="fas fa-fw fa-folder"> <Link className="" to="/">HOME</Link></i>
+          
+        </p>  
     </li>
 
 
     <li className="nav-item">
-        <a className="nav-link" href="/">
-            <i className="fas fa-fw fa-chart-area"></i>
-            <span> <Link className="" to="/user">USER</Link></span></a>
+        <p className="nav-link" href="/">
+            <i className="fas fa-fw fa-chart-area"><Link className="" to="/user">USER</Link></i>
+             </p>
     </li>
 
 
