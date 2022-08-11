@@ -52,7 +52,7 @@ const ocultarMenu=()=>{
 
     <li className="nav-item">
         <p className="nav-link" href="/">
-            <i className="fas fa-fw fa-chart-area"><Link className="" to="/user">USER</Link></i>
+            <i className="fas fa-fw fa-chart-area"><Link className="" to="/libros">Libros</Link></i>
              </p>
     </li>
 
