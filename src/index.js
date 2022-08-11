@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './assets/css/app.css';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
 import LibrosApp from './components/LibrosApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
-       <LibrosApp/>
+    <BrowserRouter>
+     <LibrosApp/>
+    </BrowserRouter>
+      
     
    
   </React.StrictMode>
