@@ -8,9 +8,15 @@ function LibrosApp() {
   return (  
   
   <div id="wrapper">  
+  
+
      <SideBar/>
      <AppRouter/>  
       <ContentWrapper/>
+     
+ 
+ 
+    <hr/>
    </div>
   )
 

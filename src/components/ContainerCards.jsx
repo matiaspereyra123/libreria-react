@@ -1,9 +1,19 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState } from 'react'
 import SmallCard from './SmallCard'
+import getUsers from '../helpers/getUsers'
 
 const ContainerCards = () => {
-    const [cards,setCards]=useState([
-        {
+    const [users,setUsers]=useState([])
+
+    useEffect(()=>{
+            getUsers()
+            .then(users=>setUsers.data)
+            
+            console.log(setUsers);
+    },[])
+
+
+   /*      {
             color:"card border-left-primary shadow h-100 py-2",
             titulo: "Total Libros",
             cant: 21,
@@ -22,13 +32,13 @@ const ContainerCards = () => {
             cant: 49,
             icon: "fas fa-user fa-2x text-gray-300",
           },
-       ]);
-
+       ]); */
+   
 
     return(
         <div>
     <div className="row">
-        {cards.map((card,i)=>{
+        {users.map((card,i)=>{
 
             return(
             
