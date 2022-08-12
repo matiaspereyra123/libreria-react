@@ -29,7 +29,7 @@ const ContainerCards = () => {
 
         return(
             
-           <SmallCard key={card+i} nombre={card.first_name} apellido={card.last_name} id={card.id}/>
+           <SmallCard key={card+i} nombre={card.first_name} apellido={card.last_name} image={card.image} email={card.email} />
         )
     })}
 </div>
