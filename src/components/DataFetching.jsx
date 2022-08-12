@@ -1,7 +1,8 @@
-import axios from 'axios'
+/*  import axios from 'axios'
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+                    
 
 function DataFetching() {
 
@@ -11,7 +12,7 @@ function DataFetching() {
         axios.get("http://localhost:3030/api/users/")
         .then(res => {
             console.log(res);
-            setUsers(res.data)
+            setUsers(res.data.users)
         })
         .catch(error => {
             console.log(error)
@@ -20,17 +21,16 @@ function DataFetching() {
     })
 
     
-
-    return (
+     return (
         <div>
             <ul>
                 {
-                    users.map(user => <li key={user.id}>{user.first_name}</li> )
+                     users.map(user => <li key={user.id}> {user.first_name} {user.last_name}</li> ) 
                 }
             </ul>
         </div>
         
-    )
+    ) 
 }
 
-export default DataFetching
+export default DataFetching  */

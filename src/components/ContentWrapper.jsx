@@ -1,6 +1,12 @@
 import React from 'react'
-import SmallCard from './ContainerCards'
-import DataFetching from './DataFetching'
+import ContainerCards from './ContainerCards' 
+
+
+
+
+
+
+
 
 const ContentWrapper = () => {
   return (
@@ -8,9 +14,8 @@ const ContentWrapper = () => {
         <div id="content-wrapper" className="d-flex flex-column">
         {/*<!-- Main Content -->*/}
         <div id="content">
-          <DataFetching/>
-          
-            <SmallCard/>
+
+            <ContainerCards/> 
         </div>
     </div>   
     </>
@@ -19,4 +24,4 @@ const ContentWrapper = () => {
   )
 }
 
-export default ContentWrapper
+export default ContentWrapper 

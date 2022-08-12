@@ -1,54 +1,41 @@
-import React, {useEffect, useState } from 'react'
+  import React, { useEffect, useState } from 'react'
 import SmallCard from './SmallCard'
-import getUsers from '../helpers/getUsers'
+
+import axios from 'axios'
+import TotalCard from './TotalCard'
 
 const ContainerCards = () => {
-    const [users,setUsers]=useState([])
+  const [users, setUsers] = useState([])
 
-    useEffect(()=>{
-            getUsers()
-            .then(users=>setUsers.data)
+  useEffect(()=> {
+      axios.get("http://localhost:3030/api/users/")
+      .then(res => {
+      /*   console.log("datos"); */
+          console.log(res.data);
+          setUsers(res.data.users)
+    
+      })
+      .catch(error => {
+          console.log(error)
+      })
+     
+  },[])
+     
+  return(
+    <div>
+<div className="row">
+                                       
+    {users.map((card,i)=>{
+
+        return(
             
-            console.log(setUsers);
-    },[])
-
-
-   /*      {
-            color:"card border-left-primary shadow h-100 py-2",
-            titulo: "Total Libros",
-            cant: 21,
-            icon: "fas fa-film fa-2x text-gray-300",
-        
-          },
-          {
-            color:"card border-left-success shadow h-100 py-2",
-            titulo: "Total Usuarios",
-            cant: 59,
-            icon: "fas fa-award fa-2x text-gray-300",
-          },
-          {
-            color:"card border-left-warning shadow h-100 py-2",
-            titulo: "Total Categorias",
-            cant: 49,
-            icon: "fas fa-user fa-2x text-gray-300",
-          },
-       ]); */
-   
-
-    return(
-        <div>
-    <div className="row">
-        {users.map((card,i)=>{
-
-            return(
-            
-               <SmallCard key={card+i}color={card.color} titulo={card.titulo} cant={card.cant} icon={card.icon}/>
-            )
-        })}
+           <SmallCard key={card+i} nombre={card.first_name} apellido={card.last_name} id={card.id}/>
+        )
+    })}
+</div>
     </div>
-        </div>
 
-    )
+)
 }
 
-export default ContainerCards
+export default ContainerCards  

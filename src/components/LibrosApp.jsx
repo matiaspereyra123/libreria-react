@@ -4,6 +4,7 @@ import ContentWrapper from './ContentWrapper'
 import SideBar from './SideBar'
 
 
+
 function LibrosApp() {
   return (  
   
@@ -12,6 +13,7 @@ function LibrosApp() {
 
      <SideBar/>
      <AppRouter/>  
+      
       <ContentWrapper/>
      
  
