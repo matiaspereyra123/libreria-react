@@ -9,7 +9,7 @@ const SmallCard = (props) => {
 
      
         <div className="card text-white bg-dark mb-3">
-        <div class="card-header bg-dark text-uppercase font-weight-bold">{props.nombre} {props.apellido}</div>
+        <div className="card-header bg-dark text-uppercase font-weight-bold">{props.nombre} {props.apellido}</div>
         <div className="card-body">
             <div className="row no-gutters align-items-center">
                 <div className="col mr-2">

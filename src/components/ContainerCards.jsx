@@ -13,7 +13,7 @@ const ContainerCards = () => {
             .then(res => {
                 /*   console.log("datos"); */
                 console.log(res.data);
-                setUsers(res.data.data)
+                setUsers(res.data.users)
             })
             .catch(error => {
                 console.log(error)
