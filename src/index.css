@@ -12,29 +12,45 @@ code {
     monospace;
 }
 
+.navbar-nav {
+  background-color: #c53758;
+  
+}
 
 
- .barra{
+ .barra {
   height:100%;
-  background-color:lightgray;
 
 }
 
-.barraLink{
+.nav-item {
+  margin-bottom: 20px;
+
+}
+
+
+
+.barraLink {
   text-decoration: none;
-  color:white;
+  color:whitesmoke;
   font-style: normal;
+  display: none;
+  
 }
+
 .barraLink:hover{
-  color:fuchsia;
+  color: lightgray;
   text-decoration: none;
 }
 
-.titulo{
-  font-weight:bold;
- 
+.titulo {
+  font-weight: bolder;
+  color: whitesmoke; 
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
+<<<<<<< HEAD
 .acordeon{
   background-color:lightgray;
 }
@@ -149,3 +165,65 @@ code {
     width: 150px;
   }
 }
+=======
+.fa-house, .fa-book, .fa-user {
+  color: whitesmoke;
+  margin-right: 15px;
+}
+
+.fa-house:hover, .fa-book:hover, .fa-user:hover {
+  color: lightgray;
+
+}
+
+.item-sidebar {
+  margin-left: 15px;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  padding: 15px;
+  
+}
+
+.card {
+  width: 50%;
+  margin-left: 15px;
+}
+
+.card-header {
+  height: 75px;
+  font-size: 18px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+@media (min-width: 768px) {
+
+  .card{
+    width: 45%;
+  }
+
+  .barraLink {
+    display: block;
+  }
+
+  
+
+}
+
+@media (min-width: 1268px) {
+  .card {
+    width: 25%;
+  }
+}
+>>>>>>> 6c8b3473c453b1711fa6fabeb4beeda7d3baa4d0

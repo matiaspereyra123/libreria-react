@@ -1,7 +1,7 @@
 import React from 'react'
 
 import AppRouter from '../routes/AppRouter'
-import ContentWrapper from './ContentWrapper'
+
 import SideBar from './SideBar'
 import '../App.css';
 import '../index.css'
@@ -15,7 +15,11 @@ function LibrosApp() {
      <SideBar/>
      <AppRouter/>  
       
+<<<<<<< HEAD
    {/*    <ContentWrapper/> */}
+=======
+  
+>>>>>>> 6c8b3473c453b1711fa6fabeb4beeda7d3baa4d0
 
      
  
