@@ -18,7 +18,7 @@ const ocultarMenu=()=>{
    
     <div >
         <div className="barra" > 
-        <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion h-100 acordeon" id="accordionSidebar">
+        <ul className="navbar-nav sidebar sidebar-dark accordion h-100" id="accordionSidebar">
 
   
    {/*  <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
@@ -32,9 +32,11 @@ const ocultarMenu=()=>{
 
  
     <li className="nav-item active">
-        <p className="nav-link" href="/">
-            <i className="fas fa-fw fa-tachometer-alt"></i>
-            <span className="titulo">OSÍAS - LIBROS ILUSTRADOS</span></p>
+        <p className="" href="/">
+
+            <p className="titulo">OSÍAS <br/> LIBROS ILUSTRADOS</p>
+    
+            </p>
     </li>
 
    
@@ -45,23 +47,22 @@ const ocultarMenu=()=>{
 
    
     <li className="nav-item">
-        <p className="nav-link" href="/">
-            <i className=""> <Link className="barraLink" to="/inicio">INICIO</Link></i>
-          
+        <p className="item-sidebar" href="/">
+            <Link className="barraLink" to="/inicio"><i className="fa-solid fa-house"></i>INICIO</Link>
         </p>  
     </li>
 
 
     <li className="nav-item">
-        <p className="nav-link" href="/">
-            <i className=""><Link className="barraLink" to="/libros">LIBROS</Link></i>
+        <p className="item-sidebar" href="/">
+        <Link className="barraLink" to="/libros"><i class="fa-solid fa-book"></i>LIBROS</Link>
              </p>
     </li>
 
 
     <li className="nav-item">
-        <p className="nav-link" href="/">
-            <i className=""><Link className="barraLink" to="/usuarios">USUARIOS</Link></i>
+        <p className="item-sidebar" href="/">
+            <Link className="barraLink" to="/usuarios"><i class="fa-solid fa-user"></i>USUARIOS</Link>
              </p>
     </li>
 
