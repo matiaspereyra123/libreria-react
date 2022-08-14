@@ -1,9 +1,12 @@
 import React from 'react'
-import ContentWrapper from '../components/ContentWrapper'
+import ContainerTotalCards from '../components/ContainerTotalCards'
+
+
 
 const HomePage = () => {
   return (
-    <div>Home
+    <div>
+            <ContainerTotalCards/> 
    </div>
   )
 }

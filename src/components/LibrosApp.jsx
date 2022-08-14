@@ -15,7 +15,7 @@ function LibrosApp() {
      <SideBar/>
      <AppRouter/>  
       
-      <ContentWrapper/>
+   {/*    <ContentWrapper/> */}
 
      
  
