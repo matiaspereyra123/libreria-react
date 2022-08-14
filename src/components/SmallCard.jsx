@@ -10,9 +10,9 @@ const SmallCard = (props) => {
         <div class="card-header bg-dark text-uppercase font-weight-bold">{props.nombre} {props.apellido}</div>
         <div className="card-body">
             <div className="row no-gutters align-items-center">
-                <div className="col mr-2">
-                    <div className="p mb-0 font-weight-bold text-white-800">{props.email}</div>
+                <div className="col mr-2">   
                     <img  className="card-img-top img-detail"  src={`http://localhost:3030/images/users/${props.image}`} alt="imagen"/>
+                    <div className="p mb-0 font-weight-bold text-white-800">{props.email}</div>
                
                 </div>
                 <div className="col-auto">
