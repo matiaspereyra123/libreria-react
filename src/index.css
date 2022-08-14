@@ -17,6 +17,12 @@ code {
   
 }
 
+.logo {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 200px;
+}
+
 
  .barra {
   height:100%;
@@ -43,12 +49,7 @@ code {
   text-decoration: none;
 }
 
-.titulo {
-  font-weight: bolder;
-  color: whitesmoke; 
-  margin-left: 15px;
-  margin-top: 15px;
-}
+
 
 .fa-house, .fa-book, .fa-user {
   color: whitesmoke;

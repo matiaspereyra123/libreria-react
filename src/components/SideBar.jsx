@@ -34,7 +34,7 @@ const ocultarMenu=()=>{
     <li className="nav-item active">
         <p className="" href="/">
 
-            <p className="titulo">OSÍAS <br/> LIBROS ILUSTRADOS</p>
+            <img class="logo" src="/osiasLogo.png" alt="" />
     
             </p>
     </li>
