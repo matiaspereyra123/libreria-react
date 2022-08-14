@@ -1,6 +1,6 @@
 import React from 'react'
-import ContainerCards from './ContainerCards' 
-
+/* import ContainerCards from './ContainerCards'
+import ContainerTotalCards from './ContainerTotalCards' */
 
 
 
@@ -14,8 +14,8 @@ const ContentWrapper = () => {
         <div id="content-wrapper" className="d-flex flex-column">
         {/*<!-- Main Content -->*/}
         <div id="content">
-
-            <ContainerCards/> 
+          
+          {/*   <ContainerCards/> */}
         </div>
     </div>   
     </>

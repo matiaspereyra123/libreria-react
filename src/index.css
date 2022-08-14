@@ -12,10 +12,29 @@ code {
     monospace;
 }
 
-.sideVisible{
-  display:block;
+
+
+ .barra{
+  height:100%;
+  background-color:lightgray;
+
 }
 
-.sideInvisible{
-  display:none;
+.barraLink{
+  text-decoration: none;
+  color:white;
+  font-style: normal;
+}
+.barraLink:hover{
+  color:fuchsia;
+  text-decoration: none;
+}
+
+.titulo{
+  font-weight:bold;
+ 
+}
+
+.acordeon{
+  background-color:lightgray;
 }

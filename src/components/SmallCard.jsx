@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SmallCard = (props) => {
     return (
@@ -12,6 +13,7 @@ const SmallCard = (props) => {
                         <div className="h5 mb-0 font-weight-bold text-gray-800">{props.apellido}</div>
                         <div className="h5 mb-0 font-weight-bold text-gray-800">{props.email}</div>
                         <div className="h5 mb-0 font-weight-bold text-gray-800">{props.image}</div>
+                   
                     </div>
                     <div className="col-auto">
                      
