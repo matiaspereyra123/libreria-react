@@ -31,6 +31,7 @@ const ContainerTotalProductsCards = () => {
 
 
             <TotalCard table={products.table} total={products.total} />
+            
 
 
         </div>
