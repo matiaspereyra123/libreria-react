@@ -43,6 +43,8 @@ const ocultarMenu=()=>{
 =======
         <p className="" href="/">
 
+            <img class="mini-logo" src="/miniOsiasLogo.png" alt="" />
+
             <img class="logo" src="/osiasLogo.png" alt="" />
     
             </p>
@@ -57,23 +59,41 @@ const ocultarMenu=()=>{
 
    
     <li className="nav-item">
+<<<<<<< HEAD
         <p className="nav-link" href="/">
             <i className=""> <Link className="barraLink" to="/inicio">INICIO</Link></i>
           
+=======
+        <p className="item-sidebar" href="/">
+        <Link className="linkIcono" to="/inicio"><i className="fa-solid fa-house"></i></Link>
+        <Link className="barraLink" to="/inicio">INICIO</Link>
+>>>>>>> 97b0d4f8d9d0ad803055eb94c12da3023e76c0ea
         </p>  
     </li>
 
 
     <li className="nav-item">
+<<<<<<< HEAD
         <p className="nav-link" href="/">
             <i className=""><Link className="barraLink" to="/libros">LIBROS</Link></i>
+=======
+        <p className="item-sidebar" href="/">
+        <Link className="linkIcono" to="/libros"><i class="fa-solid fa-book"></i></Link>
+        <Link className="barraLink" to="/libros">LIBROS</Link>
+>>>>>>> 97b0d4f8d9d0ad803055eb94c12da3023e76c0ea
              </p>
     </li>
 
 
     <li className="nav-item">
+<<<<<<< HEAD
         <p className="nav-link" href="/">
             <i className=""><Link className="barraLink" to="/usuarios">USUARIOS</Link></i>
+=======
+        <p className="item-sidebar" href="/">
+        <Link className="linkIcono" to="/usuarios"><i class="fa-solid fa-user"></i></Link>
+        <Link className="barraLink" to="/usuarios">USUARIOS</Link>
+>>>>>>> 97b0d4f8d9d0ad803055eb94c12da3023e76c0ea
              </p>
     </li>
 
