@@ -17,6 +17,15 @@ code {
   
 }
 
+.barra {
+  height: 100%;
+}
+
+.sidebar {
+  width: 225px;
+}
+
+
 .logo {
   margin-top: 20px;
   margin-left: 10px;
@@ -24,10 +33,6 @@ code {
 }
 
 
- .barra {
-  height:100%;
-
-}
 
 .nav-item {
   margin-bottom: 20px;
@@ -40,8 +45,7 @@ code {
   text-decoration: none;
   color:whitesmoke;
   font-style: normal;
-  display: none;
-  
+
 }
 
 .barraLink:hover{
@@ -72,13 +76,13 @@ code {
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
-  padding: 15px;
+  padding: 10px;
   
 }
 
 .card {
-  width: 50%;
-  margin-left: 15px;
+  width: 80%;
+  margin-left: 10px;
 }
 
 .card-header {
@@ -98,6 +102,7 @@ code {
   justify-content: space-around;
   margin-right: 0;
   margin-left: 0;
+ 
 
 }
 

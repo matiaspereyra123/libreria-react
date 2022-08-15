@@ -16,9 +16,9 @@ const ocultarMenu=()=>{
     <>
    
    
-    <div >
+    <div className="main-div-sidebar">
         <div className="barra" > 
-        <ul className="navbar-nav sidebar sidebar-dark accordion h-100" id="accordionSidebar">
+        <ul className="navbar-nav sidebar h-100" id="accordionSidebar">
 
   
    {/*  <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">

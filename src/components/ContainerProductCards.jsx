@@ -16,7 +16,7 @@ export default function ContainerProductCards() {
             .then(res => {
                 /*   console.log("datos"); */
                 console.log(res.data);
-                setProducts(res.data.data)
+                setProducts(res.data.libros)
             })
             .catch(error => {
                 console.log(error)

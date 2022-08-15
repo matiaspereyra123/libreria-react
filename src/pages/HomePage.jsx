@@ -6,9 +6,12 @@ import ContainerTotalProductsCards from '../components/ContainerTotalProductsCar
 const HomePage = () => {
   return (
     <div className='main-home-container'>
+    
       <ContainerTotalCards/>
       <ContainerTotalProductsCards/>
+   
    </div>
+   
   )
 }
 
