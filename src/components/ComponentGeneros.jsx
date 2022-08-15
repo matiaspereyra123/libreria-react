@@ -1,41 +1,40 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import SmallCardProduct from './SmallCardProduct'
 
 const ComponentGeneros = () => {
-    const [users, setUsers] = useState([])
-    const [products, setProducts] = useState()
+  
+    const [genres, setGenres] = useState([])
 /*     const [ultimoLibro, setUltimoLibro]=useState()  */
   
       useEffect(() => {
-          axios.get("http://localhost:3030/api/products/")
+          axios.get("http://localhost:3030/api/genres/")
               .then(res => {
-               
-                  console.log(res.data); 
-                  setProducts(res.data.libros)
+
+                  setGenres(res.data.generos)  
+                   console.log(res.data.generos); 
         /*           setUltimoLibro(res.data.libros.pop()); */
               })
+              .then()
               .catch(error => {
                   console.log(error)
               })
       }, [])
 
 
-      useEffect(() => {
-          axios.get("http://localhost:3030/api/users/")
-              .then(res => {
-                  /*   console.log("datos"); */
-                  console.log(res.data);
-                  setUsers(res.data.users)
-              })
-              .catch(error => {
-                  console.log(error)
-              })
-      }, [])
 
+      return (
+        <div>
+            <div className="cards-container">
+               {genres.map((product, i) => {
+                  return  <p  key={product + i}> {product.name} {product.libros.length}</p> 
+                })
 
-  return (
-        <p>asda</p>
-  )
+                } 
+
+            </div>
+        </div> 
+    ) 
 }
 
 export default ComponentGeneros

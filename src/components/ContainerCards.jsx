@@ -11,7 +11,7 @@ const ContainerCards = () => {
         axios.get("http://localhost:3030/api/users/")
             .then(res => {
                 /*   console.log("datos"); */
-                console.log(res.data);
+              /*   console.log(res.data); */
                 setUsers(res.data.users)
             })
             .catch(error => {

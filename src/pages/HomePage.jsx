@@ -1,22 +1,30 @@
 import React from 'react'
-import ComponentGeneros from '../components/ComponentGeneros'
 import ContainerTotalCards from '../components/ContainerTotalCards'
 import ContainerTotalGenresCards from '../components/ContainerTotalGenresCards'
 import ContainerTotalProductsCards from '../components/ContainerTotalProductsCards'
-import LibrosPorGeneros from '../components/LibrosPorGeneros'
+import ComponentGeneros from '../components/ComponentGeneros'
+import LastBook from '../components/LastBook'
 
 
 const HomePage = () => {
   return (
     <div className='main-home-container'>
-    
-      <ContainerTotalCards/>
-      <ContainerTotalProductsCards/>
-      <ContainerTotalGenresCards/>
-      <LibrosPorGeneros/>
-      <ComponentGeneros/>
-   </div>
-   
+      <div className='upper-container'>
+
+        <ContainerTotalCards />
+        <ContainerTotalProductsCards />
+        <ContainerTotalGenresCards />
+
+      </div>
+
+      <div className='lower-container'>
+
+        <LastBook />
+        <ComponentGeneros/>
+
+      </div>
+    </div>
+
   )
 }
 

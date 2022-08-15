@@ -9,7 +9,7 @@ const ContainerTotalProductsCards = () => {
         axios.get("http://localhost:3030/api/products/")
             .then(res => {
                 /*   console.log("datos"); */
-                console.log(res.data);
+           /*      console.log(res.data); */
                 setProducts(res.data)
             })
             .catch(error => {

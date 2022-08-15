@@ -9,7 +9,7 @@ const ContainerTotalGenresCards = () => {
         axios.get("http://localhost:3030/api/genres/")
             .then(res => {
                 /*   console.log("datos"); */
-                console.log(res.data);
+               
                 setGenres(res.data.meta)
             })
             .catch(error => {
@@ -17,7 +17,7 @@ const ContainerTotalGenresCards = () => {
             })
     }, [])
 
-    console.log(genres);
+   
 
 
     return (
