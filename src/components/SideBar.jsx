@@ -34,6 +34,8 @@ const ocultarMenu=()=>{
     <li className="nav-item active">
         <p className="" href="/">
 
+            <img class="mini-logo" src="/miniOsiasLogo.png" alt="" />
+
             <img class="logo" src="/osiasLogo.png" alt="" />
     
             </p>
@@ -48,21 +50,24 @@ const ocultarMenu=()=>{
    
     <li className="nav-item">
         <p className="item-sidebar" href="/">
-            <Link className="barraLink" to="/inicio"><i className="fa-solid fa-house"></i>INICIO</Link>
+        <Link className="linkIcono" to="/inicio"><i className="fa-solid fa-house"></i></Link>
+        <Link className="barraLink" to="/inicio">INICIO</Link>
         </p>  
     </li>
 
 
     <li className="nav-item">
         <p className="item-sidebar" href="/">
-        <Link className="barraLink" to="/libros"><i class="fa-solid fa-book"></i>LIBROS</Link>
+        <Link className="linkIcono" to="/libros"><i class="fa-solid fa-book"></i></Link>
+        <Link className="barraLink" to="/libros">LIBROS</Link>
              </p>
     </li>
 
 
     <li className="nav-item">
         <p className="item-sidebar" href="/">
-            <Link className="barraLink" to="/usuarios"><i class="fa-solid fa-user"></i>USUARIOS</Link>
+        <Link className="linkIcono" to="/usuarios"><i class="fa-solid fa-user"></i></Link>
+        <Link className="barraLink" to="/usuarios">USUARIOS</Link>
              </p>
     </li>
 
