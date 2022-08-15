@@ -5,42 +5,42 @@ import TotalCard from './TotalCard'
 const ContainerTotalProductsCards = () => {
     const [products, setProducts] = useState([])
 
-    useEffect(()=> {
+    useEffect(() => {
         axios.get("http://localhost:3030/api/products/")
-        .then(res => {
-        /*   console.log("datos"); */
-            console.log(res.data);
-            setProducts(res.data)
-        })
-        .catch(error => {
-            console.log(error)
-        })  
-    },[])
+            .then(res => {
+                /*   console.log("datos"); */
+                console.log(res.data);
+                setProducts(res.data)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }, [])
 
-  
 
-    return(
 
-        <div>
-                <div className="row">                    
+    return (
 
-            
-                <div className="container-total-cards">                    
 
-        
-       
-                
-               <TotalCard table={products.table} total={products.total}  />
-          
-       
-    </div>
+
+
+
+        <div className="container-total-cards">
+
+
+
+
+            <TotalCard table={products.table} total={products.total} />
+
 
         </div>
 
-        </div>
 
-      
+
+
+
+
 
     )
-    }
+}
 export default ContainerTotalProductsCards
