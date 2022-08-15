@@ -2,36 +2,34 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import TotalCard from './TotalCard'
 
-const ContainerTotalCards = () => {
-
-    const [users, setUsers] = useState([])
+const ContainerTotalProductsCards = () => {
+    const [products, setProducts] = useState([])
 
     useEffect(()=> {
-        axios.get("http://localhost:3030/api/users/")
+        axios.get("http://localhost:3030/api/products/")
         .then(res => {
         /*   console.log("datos"); */
             console.log(res.data);
-            setUsers(res.data.meta)
+            setProducts(res.data)
         })
         .catch(error => {
             console.log(error)
         })  
     },[])
 
-    console.log(users);
+  
 
     return(
-       
+   
     <div className="container-total-cards">                    
         
        
                 
-               <TotalCard table={users.table} total={users.total}  />
+               <TotalCard table={products.table} total={products.total}  />
           
        
     </div>
-       
+      
     )
     }
-
-export default ContainerTotalCards
+export default ContainerTotalProductsCards
