@@ -20,8 +20,13 @@ const ContainerTotalProductsCards = () => {
   
 
     return(
+<<<<<<< HEAD
         <div>
     <div className="row">                    
+=======
+   
+    <div className="container-total-cards">                    
+>>>>>>> 8e0c28355d7dd844fdfcbb90cf6b690494caca90
         
        
                 
@@ -29,7 +34,11 @@ const ContainerTotalProductsCards = () => {
           
        
     </div>
+<<<<<<< HEAD
         </div>
+=======
+      
+>>>>>>> 8e0c28355d7dd844fdfcbb90cf6b690494caca90
     )
     }
 export default ContainerTotalProductsCards

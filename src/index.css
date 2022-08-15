@@ -17,11 +17,22 @@ code {
   
 }
 
-
- .barra {
-  height:100%;
-
+.barra {
+  height: 100%;
 }
+
+.sidebar {
+  width: 225px;
+}
+
+
+.logo {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 200px;
+}
+
+
 
 .nav-item {
   margin-bottom: 20px;
@@ -34,8 +45,7 @@ code {
   text-decoration: none;
   color:whitesmoke;
   font-style: normal;
-  display: none;
-  
+
 }
 
 .barraLink:hover{
@@ -43,12 +53,7 @@ code {
   text-decoration: none;
 }
 
-.titulo {
-  font-weight: bolder;
-  color: whitesmoke; 
-  margin-left: 15px;
-  margin-top: 15px;
-}
+
 
 .fa-house, .fa-book, .fa-user {
   color: whitesmoke;
@@ -64,20 +69,20 @@ code {
   margin-left: 15px;
 }
 
-.cards-container{
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
-  padding: 15px;
+  padding: 10px;
   
 }
 
 .card {
-  width: 50%;
-  margin-left: 15px;
+  width: 80%;
+  margin-left: 10px;
 }
 
 .card-header {
@@ -86,8 +91,70 @@ code {
   padding: 5px;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
   
 }
+
+
+.main-home-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-right: 0;
+  margin-left: 0;
+ 
+
+}
+
+.container-total-cards {
+  width: 30%;
+  height: 30%;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+.total-card {
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid lightgray;
+
+}
+
+.total-card-header {
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: #c53758 4px solid;
+  
+
+
+}
+
+.total-card-body {
+  color: black;
+  padding: 10px;
+}
+
+/* @property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.total-card-body {
+  transition: --num 5s;
+  counter-set: num var(--num);
+
+}
+.total-card-body::after {
+  content: counter(num);
+}
+.total-card-body:hover {
+  --num: 20;
+} */
+
 
 
 

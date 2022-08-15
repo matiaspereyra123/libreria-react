@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import SmallCard from './SmallCard'
 
 import axios from 'axios'
-import TotalCard from './TotalCard'
-import SmallCardProduct from './SmallCardProduct'
+
 
 const ContainerCards = () => {
     const [users, setUsers] = useState([])

@@ -16,9 +16,13 @@ const ocultarMenu=()=>{
     <>
    
    
-    <div >
+    <div className="main-div-sidebar">
         <div className="barra" > 
+<<<<<<< HEAD
         <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion h-100 acordeon" id="accordionSidebar">
+=======
+        <ul className="navbar-nav sidebar h-100" id="accordionSidebar">
+>>>>>>> 8e0c28355d7dd844fdfcbb90cf6b690494caca90
 
   
    {/*  <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
@@ -32,9 +36,17 @@ const ocultarMenu=()=>{
 
  
     <li className="nav-item active">
+<<<<<<< HEAD
         <p className="nav-link" href="/">
             <i className="fas fa-fw fa-tachometer-alt"></i>
             <span className="titulo">OSÍAS - LIBROS ILUSTRADOS</span></p>
+=======
+        <p className="" href="/">
+
+            <img class="logo" src="/osiasLogo.png" alt="" />
+    
+            </p>
+>>>>>>> 8e0c28355d7dd844fdfcbb90cf6b690494caca90
     </li>
 
    
