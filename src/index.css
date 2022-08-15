@@ -156,11 +156,9 @@ code {
   initial-value: 0;
   inherits: false;
 }
-
 .total-card-body {
   transition: --num 5s;
   counter-set: num var(--num);
-
 }
 .total-card-body::after {
   content: counter(num);
@@ -204,4 +202,3 @@ code {
     width: 25%;
   }
 }
-
