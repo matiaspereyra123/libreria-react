@@ -2,16 +2,17 @@ import React from 'react';
 
 const LibrosPorGeneroCard = (props) => {
     return (
-        <div>
+        
             <div className="card">
-                <img className="card-img-top" src="/miniOsiasLogo.png" />
+                {/* <img className="card-img-top" src={`/assets/images/${props.image}`} /> */}
+                <div className="genre-card-header bg-dark text-uppercase text-white font-weight-bold">{props.nombre}</div>
                     <div className="card-body">
-                        <h5 className="card-title">{props.nombre}</h5>
-                        <p className="card-text">{props.libros}</p>
+                        {/* <h5 className="card-title">{props.nombre}</h5> */}
+                        <p className="genre-card-text">{props.libros}</p>
               
                     </div>
             </div>
-        </div>
+       
     );
 }
 

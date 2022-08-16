@@ -25,20 +25,20 @@ const ComponentGeneros = () => {
 
 
       return (
-        <div>
+       
             <div className="cards-container">
                {genres.map((product, i) => {
                   return (
-                    <LibrosPorGeneroCard key={product + i} nombre={product.name} libros={product.libros.length}/>
+                    <LibrosPorGeneroCard key={product + i} nombre={product.name} libros={product.libros.length} />
                     
                   )
-                //   <p  key={product + i}> {product.name} {product.libros.length}</p> 
+           
                 })
 
                 } 
 
             </div>
-        </div> 
+    
     ) 
 }
 
