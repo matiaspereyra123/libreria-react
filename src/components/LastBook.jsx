@@ -34,7 +34,7 @@ const LastBook = () => {
             
             ):
             (
-                "No hay libros"
+                "Cargando..."
                  )
             }
          
