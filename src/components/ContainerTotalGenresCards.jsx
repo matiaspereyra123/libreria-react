@@ -5,17 +5,32 @@ import TotalCard from './TotalCard'
 const ContainerTotalGenresCards = () => {
     const [genres, setGenres] = useState([])
 
+
     useEffect(() => {
+
+        async function getReq(){
+          const api = await fetch ('http://localhost:3030/api/genres/');
+          const genresApi = await api.json();
+          if(genresApi){
+            setGenres(genresApi.meta);       
+          }
+        }
+        getReq();
+    }, []) 
+
+
+
+/*     useEffect(() => {
         axios.get("http://localhost:3030/api/genres/")
             .then(res => {
-                /*   console.log("datos"); */
+           
                
                 setGenres(res.data.meta)
             })
             .catch(error => {
                 console.log(error)
             })
-    }, [])
+    }, []) */
 
    
 

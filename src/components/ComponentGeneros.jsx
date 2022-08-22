@@ -1,4 +1,4 @@
-import axios from 'axios'
+/* import axios from 'axios' */
 import React, { useEffect, useState } from 'react'
 
 
@@ -10,39 +10,34 @@ const ComponentGeneros = () => {
   
     const [genres, setGenres] = useState([])
 
-  
-      useEffect(() => {
-          axios.get("http://localhost:3030/api/genres/")
-              .then(res => {
+    useEffect(() => {
 
-                  setGenres(res.data.generos)  
-                   console.log(res.data.generos); 
-      
-              })
-              .then()
-              .catch(error => {
-                  console.log(error)
-              })
-      }, [])
+      async function getReq(){
+        const api = await fetch ('http://localhost:3030/api/genres/');
+        const genresApi = await api.json();
+        if(genresApi){
+          setGenres(genresApi.generos);       
+        }
+      }
+      getReq();
+  }, []) 
 
 
 
-      return (
+
+          return (
        
-            <div className="cards-container">
-               {genres.map((product, i) => {
-                  return (
+          <div className="cards-container">
+
+               {genres.map((product, i) => (
+         
                     <LibrosPorGeneroCard key={product + i} nombre={product.name} libros={product.libros.length} />
                     
-                  )
-           
-                })
+                ))} 
 
-                } 
-
-            </div>
+            </div> 
     
-    ) 
+    )  
 }
 
 export default ComponentGeneros

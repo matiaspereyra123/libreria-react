@@ -6,17 +6,30 @@ const ContainerTotalCards = () => {
 
     const [users, setUsers] = useState([])
 
-    useEffect(()=> {
+
+    useEffect(() => {
+
+        async function getReq(){
+          const api = await fetch ('http://localhost:3030/api/users/');
+          const usersApi = await api.json();
+          if(usersApi){
+            setUsers(usersApi.meta);       
+          }
+        }
+        getReq();
+    }, []) 
+
+/*     useEffect(()=> {
         axios.get("http://localhost:3030/api/users/")
         .then(res => {
-        /*   console.log("datos"); */
-          /*   console.log(res.data); */
+        // console.log("datos"); 
+          //  console.log(res.data); 
             setUsers(res.data.meta)
         })
         .catch(error => {
             console.log(error)
         })  
-    },[])
+    },[]) */
 
     
 

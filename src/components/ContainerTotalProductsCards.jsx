@@ -1,22 +1,40 @@
-import axios from 'axios'
+/* import axios from 'axios' */
 import React, { useEffect, useState } from 'react'
 import TotalCard from './TotalCard'
 
 const ContainerTotalProductsCards = () => {
     const [products, setProducts] = useState([])
 
+
+
+    useEffect(() => {
+
+        async function getReq(){
+          const api = await fetch ('http://localhost:3030/api/products/');
+          const productsApi = await api.json();
+          if(productsApi){
+     
+        setProducts(productsApi);  
+          }
+        }
+        getReq();
+    }, []) 
+
+
+
+
+/* 
     useEffect(() => {
         axios.get("http://localhost:3030/api/products/")
             .then(res => {
-                /*   console.log("datos"); */
-           /*      console.log(res.data); */
+     
                 setProducts(res.data)
             })
             .catch(error => {
                 console.log(error)
             })
     }, [])
-
+ */
 
 
     return (
