@@ -28,7 +28,7 @@ const LastBook = () => {
 
  return (
   
-        <div className="card-container">
+        <div className="last-card-container">
             {products ?
             (<LastBookCard  titulo={ultimoLibro.title} autor={ultimoLibro.author} ilustrador={ultimoLibro.illustrator} precio={ultimoLibro.price} imagen={ultimoLibro.image} /> 
             

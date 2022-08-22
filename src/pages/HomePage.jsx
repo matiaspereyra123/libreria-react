@@ -4,6 +4,7 @@ import ContainerTotalGenresCards from '../components/ContainerTotalGenresCards'
 import ContainerTotalProductsCards from '../components/ContainerTotalProductsCards'
 import ComponentGeneros from '../components/ComponentGeneros'
 import LastBook from '../components/LastBook'
+import LastUser from '../components/LastUser'
 
 
 const HomePage = () => {
@@ -17,12 +18,17 @@ const HomePage = () => {
 
       </div>
 
-      <div className='lower-container'>
+      <div className='middle-container'>
 
         <LastBook />
-        <ComponentGeneros/>
-
+        <LastUser/>
+       
       </div>
+
+      <div className='lower-container'>
+      <ComponentGeneros/>
+      </div>
+
     </div>
 
   )

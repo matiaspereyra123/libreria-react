@@ -97,6 +97,7 @@ code {
 .card {
   width: 80%;
   margin-left: 10px;
+  margin-bottom: 15px;
 }
 
 .card-header {
@@ -107,6 +108,11 @@ code {
   align-items: center;
   text-transform: uppercase;
   
+}
+
+.last-card-container {
+  margin-bottom: 40px;
+  padding: 5px;
 }
 
 
@@ -121,24 +127,36 @@ code {
 
 .upper-container{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
  
 }
 
-.lower-container {
-  margin-left: 30px;
+.middle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 30px;
-  
+  margin-bottom: 30px;
 
 }
 
-.container-ultimo {
-  height: 20%;
-}
+
 
 .last-book-card {
-  width: 30%;
- 
+ margin-right: 15px;
+ margin-bottom: 30px;
+ height: 100%;
+}
+
+.lastUser-card-img-top {
+  width: 400px;
+  height: 400px;
+}
+
+.genre-card-text {
+  color: black;
+  text-align: center;
 }
 
 
@@ -146,7 +164,7 @@ code {
 
 
 .container-total-cards {
-  width: 30%;
+  width: 50%;
   height: 30%;
   margin-top: 15px;
   margin-right: 30px;
@@ -166,13 +184,18 @@ code {
   text-align: center;
   text-transform: uppercase;
   border-bottom: #c53758 4px solid;
+}
 
-
+.genre-card-header {
+  border-bottom: #c53758 4px solid;
+  padding: 10px;
+  
 }
 
 .total-card-body {
   color: black;
   padding: 10px;
+  text-align: center;
 }
 
 
@@ -220,6 +243,11 @@ code {
     display: block;
   }
 
+  .middle-container{
+    flex-wrap: wrap;
+  }
+
+
   
 
 }
@@ -227,5 +255,13 @@ code {
 @media (min-width: 1268px) {
   .card {
     width: 25%;
+  }
+
+  .container-total-cards {
+    width: 30%
+  }
+
+  .upper-container{
+    flex-wrap: nowrap;
   }
 }
