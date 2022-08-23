@@ -22,6 +22,14 @@ const ContainerCards = () => {
     }, []) 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 5e7e8d44867fb619436f0cc86332a2595dc3b57f
 /* 
     useEffect(() => {
         axios.get("http://localhost:3030/api/users/")
@@ -36,6 +44,12 @@ const ContainerCards = () => {
     }, []) */
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 5e7e8d44867fb619436f0cc86332a2595dc3b57f
     return (
         <div>
             <div className="cards-container">
