@@ -17,7 +17,7 @@ function DataFetching() {
             console.log(error)
         })
        
-    })
+    }, [])
 
     
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import ContainerProductCards from '../components/ContainerProductCards'
 
 const LibrosPage = () => {
   return (
-    <div><p> </p></div>
+    <div>
+      <ContainerProductCards/>
+    </div>
   )
 }
 

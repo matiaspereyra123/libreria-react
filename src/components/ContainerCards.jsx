@@ -1,44 +1,53 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SmallCard from './SmallCard'
 
+/* import axios from 'axios' */
+
+
 const ContainerCards = () => {
-    const [cards,setCards]=useState([
-        {
-            color:"card border-left-primary shadow h-100 py-2",
-            titulo: "Total Libros",
-            cant: 21,
-            icon: "fas fa-film fa-2x text-gray-300",
-        
-          },
-          {
-            color:"card border-left-success shadow h-100 py-2",
-            titulo: "Total Usuarios",
-            cant: 59,
-            icon: "fas fa-award fa-2x text-gray-300",
-          },
-          {
-            color:"card border-left-warning shadow h-100 py-2",
-            titulo: "Total Categorias",
-            cant: 49,
-            icon: "fas fa-user fa-2x text-gray-300",
-          },
-       ]);
+    const [users, setUsers] = useState([])
 
 
-    return(
+ 
+    useEffect(() => {
+
+        async function getReq(){
+          const api = await fetch ('http://localhost:3030/api/users/');
+          const usersApi = await api.json();
+          if(usersApi){
+            setUsers(usersApi.users);       
+          }
+        }
+        getReq();
+    }, []) 
+
+
+/* 
+    useEffect(() => {
+        axios.get("http://localhost:3030/api/users/")
+            .then(res => {
+             //     console.log("datos"); 
+             //   console.log(res.data); 
+                setUsers(res.data.users)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }, []) */
+
+
+    return (
         <div>
-    <div className="row">
-        {cards.map((card,i)=>{
+            <div className="cards-container">
+                {users.map((card, i) => (
+                  
+                        <SmallCard key={card + i} nombre={card.first_name} apellido={card.last_name} image={card.image} email={card.email} id={card.id} />
+                    
+                ))}
 
-            return(
-            
-               <SmallCard key={card+i}color={card.color} titulo={card.titulo} cant={card.cant} icon={card.icon}/>
-            )
-        })}
-    </div>
+            </div>
         </div>
-
     )
 }
 
-export default ContainerCards
+export default ContainerCards  
