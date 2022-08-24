@@ -8,7 +8,7 @@ function DataFetching() {
     const [users, setUsers] = useState([])
 
     useEffect(()=> {
-        axios.get("http://localhost:3030/api/users/")
+        axios.get("https://osias.herokuapp.com/api/users/")
         .then(res => {
             console.log(res);
             setUsers(res.data)

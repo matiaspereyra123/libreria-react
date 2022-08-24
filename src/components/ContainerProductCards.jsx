@@ -14,7 +14,7 @@ export default function ContainerProductCards() {
     useEffect(() => {
 
         async function getReq(){
-          const api = await fetch ('http://localhost:3030/api/products/');
+          const api = await fetch ('https://osias.herokuapp.com/api/products/');
           const productsApi = await api.json();
           if(productsApi){
             setProducts(productsApi.libros);       
@@ -50,9 +50,4 @@ export default function ContainerProductCards() {
             </div>
         </div>
     )
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> 5e7e8d44867fb619436f0cc86332a2595dc3b57f

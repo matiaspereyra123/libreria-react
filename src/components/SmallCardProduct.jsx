@@ -7,7 +7,7 @@ export default function SmallCardProduct(props) {
     <div className="card-body">
         <div className="row no-gutters align-items-center">
             <div className="col mr-2">
-                <img  className="card-img-top img-detail mb-3"  src={`http://localhost:3030/images/products/${props.imagen}`} alt="imagen"/>
+                <img  className="card-img-top img-detail mb-3"  src={`https://osias.herokuapp.com/images/products/${props.imagen}`} alt="imagen"/>
                 <div className="p mb-0 font-weight-bold text-white-800">{props.autor}</div>
                 <div className="p mb-0 font-weight-bold text-white-800">{props.ilustrador}</div>
                 <div className="p mb-0 font-weight-bold text-white-800">${props.precio}</div>

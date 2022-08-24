@@ -15,7 +15,7 @@ const ComponentGeneros = () => {
     useEffect(() => {
 
       async function getReq(){
-        const api = await fetch ('http://localhost:3030/api/genres/');
+        const api = await fetch ('https://osias.herokuapp.com/api/genres/');
         const genresApi = await api.json();
         if(genresApi){
           setGenres(genresApi.generos);       

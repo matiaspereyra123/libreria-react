@@ -10,7 +10,7 @@ const LastBook = () => {
   const [ultimoLibro, setUltimoLibro]=useState() 
 
     useEffect(() => {
-        axios.get("http://localhost:3030/api/products/")
+        axios.get("https://osias.herokuapp.com/api/products/")
             .then(res => {
              
                /*  console.log(res.data);  */
