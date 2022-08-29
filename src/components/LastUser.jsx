@@ -11,7 +11,7 @@ const LastUser = () => {
   const [ultimoUsuario, setUltimoUsuario]=useState() 
 
     useEffect(() => {
-        axios.get("https://osias.herokuapp.com/api/users/")
+        axios.get("https://osiaslibros.onrender.com/api/users/")
             .then(res => {
              
                /*  console.log(res.data);  */

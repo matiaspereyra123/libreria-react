@@ -10,7 +10,7 @@ const ContainerTotalProductsCards = () => {
     useEffect(() => {
 
         async function getReq(){
-          const api = await fetch ('https://osias.herokuapp.com/api/products/');
+          const api = await fetch ('https://osiaslibros.onrender.com/api/products/');
           const productsApi = await api.json();
           if(productsApi){
      

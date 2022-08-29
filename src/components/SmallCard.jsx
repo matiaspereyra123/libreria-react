@@ -14,7 +14,7 @@ const SmallCard = (props) => {
             <div className="row no-gutters align-items-center">
                 <div className="col mr-2">
                   
-                    <img  className="card-img-top img-detail"  src={`https://osias.herokuapp.com/images/users/${props.image}`} alt="imagen"/>
+                    <img  className="card-img-top img-detail"  src={`https://osiaslibros.onrender.com/images/users/${props.image}`} alt="imagen"/>
                     <div className="p mb-0 font-weight-bold text-white-800">{props.email}</div>
                
                 </div>

@@ -8,7 +8,7 @@ export default function LastUserCard(props) {
         <div className="row no-gutters align-items-center">
             <div className="col mr-2">
                 
-                <img  className="lastUser-card-img-top img-detail mb-3"  src={`https://osias.herokuapp.com/images/users/${props.imagen}`} alt="imagen"/>
+                <img  className="lastUser-card-img-top img-detail mb-3"  src={`https://osiaslibros.onrender.com/images/users/${props.imagen}`} alt="imagen"/>
                 <div className="p mb-2 font-weight-bold text-white-1500">{props.nombre} {props.apellido}</div>
                 <div className="p mb-0 font-weight-bold text-white-800">{props.email}</div>
            

@@ -10,7 +10,7 @@ const ContainerTotalCards = () => {
     useEffect(() => {
 
         async function getReq(){
-          const api = await fetch ('https://osias.herokuapp.com/api/users/');
+          const api = await fetch ('https://osiaslibros.onrender.com/api/users/');
           const usersApi = await api.json();
           if(usersApi){
             setUsers(usersApi.meta);       
